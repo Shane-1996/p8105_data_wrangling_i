@@ -12,6 +12,8 @@ library(tidyverse)
 
 ## `pivot_longer`
 
+Load "public_pulse_data.sas7bdat".
+
 ```{r}
 pulse_data = 
   haven::read_sas("./data/public_pulse_data.sas7bdat") %>% 
@@ -65,7 +67,7 @@ analysis_result %>%
 ```
 
 
-## Binding rows
+## `bind_rows`
 
 With "LotR.xlsx".
 
@@ -99,7 +101,7 @@ lotr_tidy =
 ```
 
 
-## Joining datasets
+## `left_join`
 
 Import and clean the FAS.
 
